@@ -159,6 +159,11 @@ body {
     position: relative;
 }
 
+.location {
+    color: green;
+    text-decoration: underline;
+    padding: 10px 0px 2px 0px;
+}
 
 
 /* 控制屏幕变化 */
