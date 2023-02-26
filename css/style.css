@@ -73,10 +73,10 @@ body {
     position: fixed;
     top: 60px;
     left: 0;
-    width: 21%;
+    width: 30vw;
     height: 100%;
     background-color: #2a5196;
-    transition: .3s;
+    /* transition: .3s; */
     z-index: 1;
 }
 
@@ -130,54 +130,57 @@ body {
 	z-index: 0;
 }
 
-
-
-main {
+/* 通知区域样式 */
+.section .events {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0px 0px;
+    width: 100%;
+    position: relative;
+	/* padding: 0 20px 20px 20px; */
+}
+.events .title {
+    width: 100%;
+}
+.events_text {
+    font-size: 4em;
+    font-style: bold;
+    padding: 0px 0px 10px 0px;
+    border-bottom: 2px darkgray solid;
 }
 
-.content {
+
+.adventure-list {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
     position: relative;
 }
 
-.content img {
-    width: 100%;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.overlay h2 {
-    margin-top: 0;
-    font-size: 50px;
-}
 
 
+/* 控制屏幕变化 */
 @media screen and (max-width: 1200px) {
-    main {
+    .header_title h1 {
+        font-size: large;
+    }
+    .container {
         width: 100%;
+    }
+    .events_text {
+        font-size: 3em;
     }
 }
 
 @media screen and (max-width: 800px) {
-    main {
+    .header_title h1 {
+        font-size: medium;
+    }
+    .container {
         font-size: 0.8em;
+    }
+    .events_text {
+        font-size: 2em;
     }
 }
